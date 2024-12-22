@@ -1,6 +1,10 @@
 :root {
   --primary-blue: #1d4ed8;
   --secondary-blue: #bfdbfe;
+  --accent-color: #d7a61d;
+  --accent-color2: #4fd71d;
+  --accent-color2: #4fd71d;
+  --accent-color3: #ff8577;
   --primary-gray: #374151;
   --secondary-gray: #6b7280;
   --tertiary-gray: #d1d5db;
@@ -10,5 +14,34 @@
   --text-readable: 20px;
 }
 
-/* noto sans (typography) 
-*/
+body {
+  font-family: "Noto Serif", serif;
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* header  */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: ;
+}
