@@ -10,8 +10,6 @@
   --tertiary-gray: #d1d5db;
   --heading-color: #1f2937;
   --text-color: #374151;
-  --text-small: 16px;
-  --text-readable: 20px;
 }
 
 body {
@@ -19,6 +17,16 @@ body {
   color: var(--text-color);
   margin: 0;
   padding: 0;
+}
+
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+h1 {
 }
 
 ul {
@@ -37,11 +45,35 @@ a:active {
   text-decoration: none;
   color: inherit;
 }
+hr {
+  border: none;
+  height: 8px;
+  background-color: var(--secondary-gray);
+  position: absolute;
+  width: 100vw;
+  left: 0;
+}
 
 /* header  */
 
-nav {
+.nav {
   display: flex;
   justify-content: space-between;
-  margin-top: ;
+  padding: 12px 0;
+  margin: 20px 0;
 }
+
+.nav__logo {
+  font-size: 32px;
+  font-weight: 600;
+  color: var(--heading-color);
+}
+
+.nav__links {
+  display: flex;
+  gap: 6rem;
+  font-size: 20px;
+  align-items: center;
+}
+
+/* filosofia */
