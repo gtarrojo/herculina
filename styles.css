@@ -12,6 +12,11 @@
   --text-color: #374151;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 body {
   font-family: "Noto Serif", serif;
   color: var(--text-color);
@@ -33,7 +38,7 @@ h3 {
 }
 
 h1 {
-  font-size: 54px;
+  font-size: 62px;
   margin: 0;
 }
 
@@ -54,12 +59,13 @@ a:active {
   color: inherit;
 }
 hr {
-  border: none;
-  height: 8px;
+  height: 1px;
   background-color: var(--secondary-gray);
   position: absolute;
   width: 100vw;
   left: 0;
+  border-top: 6px solid var(--secondary-blue);
+  box-sizing: content-box;
 }
 
 /* header  */
@@ -86,15 +92,48 @@ hr {
 
 /* intro */
 
-.intro__background {
+.intro {
+  margin-top: 45px;
+}
+
+/* .intro__background {
   background-image: url(assets/Herculina\ promoción.avif);
   background-size: cover;
   height: 800px;
   margin-top: 20px;
+  width: auto;
+  height: 600px;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  display: flex;
+} */
+
+.intro__container {
+  padding: 12px;
+  display: flex;
+  align-items: stretch;
+  gap: 6px;
+}
+
+.intro__texto {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--secondary-blue);
+  width: 720px;
+  height: 480px;
+  justify-content: center;
+  align-items: stretch;
+  padding: 20px;
+}
+
+.intro img {
+  width: 720px;
+  border: none;
 }
 
 .intro p {
-  font-size: 16px;
+  font-size: 32px;
+  font-weight: 500;
 }
 
 /* filosofia */
