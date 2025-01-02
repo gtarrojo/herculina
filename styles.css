@@ -10,7 +10,7 @@
   --tertiary-gray: #d1d5db;
   --heading-color: #1f2937;
   --text-color: #374151;
-  --margin-section: 280px;
+  --margin-section: 240px;
 }
 
 *,
@@ -36,6 +36,7 @@ h1,
 h2,
 h3 {
   color: var(--heading-color);
+  text-transform: capitalize;
 }
 
 h1 {
@@ -53,6 +54,11 @@ h3 {
 
 ul {
   margin: 0;
+}
+
+ol {
+  margin: 0;
+  padding: 0;
 }
 
 li {
@@ -129,10 +135,11 @@ hr {
   flex-direction: column;
 
   width: 720px;
-  height: 480px;
+  height: 600px;
   justify-content: center;
   align-items: stretch;
   padding: 20px;
+  background-color: var(--secondary-blue);
 }
 
 .intro img {
@@ -167,7 +174,6 @@ hr {
 
 .filosofia__acordeon {
   width: 100%;
-  overflow: hidden;
 }
 
 .filosofia__acordeon__item {
@@ -184,6 +190,7 @@ hr {
   padding: 20px;
   cursor: pointer;
   font-weight: bold;
+  text-transform: capitalize;
 }
 
 .filosofia__acordeon__header:hover {
@@ -192,9 +199,20 @@ hr {
 
 .filosofia__acordeon__content {
   padding: 15px;
-  display: none;
 }
 
 .filosofia__acordeon__content.open {
   display: block;
+}
+
+/* estructura */
+
+.estructura {
+  margin-top: var(--margin-section);
+}
+
+.estructura__header__texto {
+  font-size: 32px;
+  background-color: var(--secondary-blue);
+  padding: 20px;
 }
